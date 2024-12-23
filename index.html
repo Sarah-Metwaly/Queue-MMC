@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Intensity Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>M/M/C System Calculator</h1>
+        <form id="calculatorForm">
+            <div class="form-group">
+                <label for="lambda">Lambda (λ):</label>
+                <input type="text" id="lambda" placeholder="Enter lambda (λ)" required>
+            </div>
+            <div class="form-group">
+                <label for="meo">Mew (μ):</label>
+                <input type="text" id="Mew" placeholder="Enter service rate (μ)" required>
+            </div>
+            <div class="form-group">
+                <label for="c">C (Servers):</label>
+                <input type="number" id="c" placeholder="Enter number of servers (C)" required>
+            </div>
+            <input type="submit" value="Calculate">
+        </form>
+    
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Results will appear here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
